@@ -36,7 +36,7 @@ public class ShadowPac extends AbstractGame  {
      * gameState 4 -> Win Screen
      * gameState 5 -> Lose Screen
      */
-    private static int gameState = 3;
+    private static int gameState = 0;
     private int frameCount = 0;
 
     /**

@@ -2,12 +2,6 @@ import bagel.*;
 
 import java.io.*;
 
-/**
- * Skeleton Code for SWEN20003 Project 2, Semester 1, 2023
- *
- * Please enter your name below
- * @author Andwele Ancheta
- */
 public class ShadowPac extends AbstractGame  {
     private final static int WINDOW_WIDTH = 1024;
     private final static int WINDOW_HEIGHT = 768;

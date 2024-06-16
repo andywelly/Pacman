@@ -30,7 +30,7 @@ public class ShadowPac extends AbstractGame  {
      * gameState 4 -> Win Screen
      * gameState 5 -> Lose Screen
      */
-    private static int gameState = 0;
+    private static int gameState = 3;
     private int frameCount = 0;
 
     /**
@@ -64,7 +64,13 @@ public class ShadowPac extends AbstractGame  {
     private void titleScreen() {
         TITLE_FONT.drawString(GAME_TITLE, TITLE_X, TITLE_Y);
         INSTRUCTION_FONT.drawString(" PRESS SPACE TO START\n" +
-                "USE ARROW KEYS TO MOVE", TITLE_X + OFFSET_X, TITLE_Y + OFFSET_Y);
+                "USE ARROW KEYS TO MOVE\n\n"
+                , TITLE_X + OFFSET_X, TITLE_Y + OFFSET_Y);
+
+        INSTRUCTION_FONT.drawString("CLEAR ALL PELLETS TO MOVE TO STAGE 2\n" +
+                        "WHERE THE GHOSTS WILL START MOVING",
+                TITLE_X - OFFSET_X, TITLE_Y + 2 * OFFSET_Y);
+
     }
 
     /**
@@ -72,7 +78,7 @@ public class ShadowPac extends AbstractGame  {
      */
     private void levelComplete() {
         frameCount ++;
-        if (frameCount < 300) {
+        if (frameCount < 200) {
             TITLE_FONT.drawString("LEVEL COMPLETE!", MESSAGE_X, MESSAGE_Y);
         } else {
             MESSAGE_FONT.drawString("  PRESS SPACE TO START\n" +

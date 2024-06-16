@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public class GhostGreen extends Ghost implements Eatable{
     Random rand = new Random();
+    private final int score = 30;
     private String direction;
 
     /**
@@ -68,6 +69,6 @@ public class GhostGreen extends Ghost implements Eatable{
      */
     @Override
     public int getScore() {
-        return getScore();
+        return score;
     }
 }

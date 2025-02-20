@@ -3,6 +3,10 @@ Java Implementation of the Pac-Man game.
 This project leverages BAGEL (Basic Academic Graphical Engine Library) and 
 LWJGL (Lightweight Java Game Library) to recreate the beloved arcade game
 
+## Gameplay
+
+https://github.com/user-attachments/assets/3c514fec-8040-48e7-983f-8ba064fa31ab
+
 ## How to Play
 
 Running the Game:
